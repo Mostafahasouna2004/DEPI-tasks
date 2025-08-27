@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+.tips-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.tips-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.tips-section h2 span {
+  font-weight: 700;
+  font-size: 32px;
+  display: block;
+  margin-top: 8px;
+  color: #2c2c2c;
+}
+
+.divider {
+  width: 10px;
+  height: 10px;
+  background-color: #00cfcf;
+  margin: 12px auto 40px;
+  transform: rotate(45deg);
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  width: 300px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.card .meta {
+  font-style: italic;
+  font-size: 14px;
+  color: #555;
+}
+
+.card .meta span {
+  color: #00cfcf;
+  font-weight: bold;
+}
+
+.card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c2c2c;
+  margin: 12px 0;
+}
+
+.card .desc {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.view-all-btn {
+  margin-top: 40px;
+}
+
+.view-all-btn button {
+  background-color: #00cfcf;
+  border: none;
+  color: white;
+  padding: 10px 26px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.view-all-btn button:hover {
+  background-color: #00b3b3;
+}
