@@ -1,0 +1,154 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.cruds {
+    width: 80%;
+    margin: auto;
+}
+
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.head {
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.head h2,
+p {
+    font-size: 30px;
+    padding: 3px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #111;
+    color: #fff;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price input {
+    width: 21%;
+}
+
+input:focus {
+    background-color: black;
+}
+
+#createbtn {
+
+    width: 100%;
+    background-color: rgb(78, 5, 55);
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#createbtn:hover {
+    background-color: rgb(207, 19, 148);
+    letter-spacing: 1px;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.btns button {
+    width: 45%;
+    padding: 10px;
+    background-color: rgb(78, 5, 55);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    color: #fff;
+}
+
+.btns button:hover {
+    background-color: rgb(207, 19, 148);
+    letter-spacing: 1px;
+}
+
+#total {
+    background-color: rgb(160, 28, 28);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+#total::before {
+    content: "Total: ";
+    color: #fff;
+    
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+table tr th {
+
+    color: #fff;
+    padding: 10px;
+
+}
+
+table tr td {
+    padding: 10px;
+    color: #fff;
+}
+
+table tr td button {
+    background-color:  rgb(78, 5, 55);
+    padding: 5px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.5s;
+}
+table tr td button:hover {
+    background-color: rgb(207, 19, 148);
+    letter-spacing: 1px;
+}
+table th{
+    text-transform: uppercase;
+}
+#deletebtn button {
+    width: 100%;
+    background-color: rgb(78, 5, 55);
+    color: #ffffff;
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+#deletebtn button:hover {
+    background-color: rgb(207, 19, 148);
+    letter-spacing: 1px;
+}
