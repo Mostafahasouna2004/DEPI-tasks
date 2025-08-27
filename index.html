@@ -1,137 +1,280 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>product management system</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/all.min.css">
 
 
 </head>
 
 <body>
-    <div class="cruds">
-        <div class="head">
-            <h2>cruds</h2>
-            <p>product management system</p>
-        </div>
-        <div class="inputs">
-            <input type="text" id="title" placeholder="title">
-            <div class="price">
-                <input onkeyup="calculate()" type="number" id="price" placeholder=" price">
-                <input onkeyup="calculate()" type="number" id="taxes" placeholder="taxes">
-                <input onkeyup="calculate()" type="number" id="ads" placeholder="ads">
-                <input onkeyup="calculate()" type="number" id="discount" placeholder="discount">
-                <small id="total"></small>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="item">
+                    <img class="w-100" src="images/portfolio-1.jpg">
+                    <div class="itemcaption">
+                        <h4>item title</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, aspernatur.</p>
+                    </div>
+                </div>
             </div>
-            <input type="text" placeholder="count" id="count">
-            <input type="text" placeholder="category" id="category">
-            <button  id="createbtn">create</button>
-
-
-        </div>
-        <div class="outputs">
-            <input onkeyup="searchdata(this.value)" type="text" placeholder="search" id="search">
-            <div class="btns">
-                <button onclick="searchfunction(this.id)" id="searchtitle">search by title</button>
-                <button onclick="searchfunction(this.id)" id="searchcategory">search by category</button>
+            <div class="col-md-4">
+                <div class="item">
+                    <img class="w-100" src="images/portfolio-2.jpg">
+                    <div class="itemcaption">
+                        <h4>item title</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, aspernatur.</p>
+                    </div>
+                </div>
             </div>
-            <div id="deletebtn">
-
-              
+            <div class="col-md-4">
+                <div class="item">
+                    <img class="w-100" src="images/portfolio-3.jpg">
+                    <div class="itemcaption">
+                        <h4>item title</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, aspernatur.</p>
+                    </div>
+                </div>
             </div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>id</th>
-                        <th>title</th>
-                        <th>price</th>
-                        <th>taxes</th>
-                        <th>ads</th>
-                        <th>discount</th>
-                        <th>total</th>
-                        <th>count</th>
-                        <th>category</th>
-                        <th>update</th>
-                        <th>delete</th>
-                    </tr>
-                </thead>
-                <tbody id="tbody">
-                    <!-- <tr>
-                        <td>1</td>
-                        <td>iphone 12</td>
-                        <td>1200</td>
-                        <td>100</td>
-                        <td>50</td>
-                        <td>10</td>
-                        <td>1260</td>
-                        <td>10</td>
-                        <td>phones</td>
-                        <td><button>update</button></td>
-                        <td><button>delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>iphone 11</td>
-                        <td>1000</td>
-                        <td>100</td>
-                        <td>50</td>
-                        <td>10</td>
-                        <td>1060</td>
-                        <td>10</td>
-                        <td>phones</td>
-                        <td><button>update</button></td>
-                        <td><button>delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>iphone 10</td>
-                        <td>800</td>
-                        <td>100</td>
-                        <td>50</td>
-                        <td>10</td>
-                        <td>860</td>
-                        <td>10</td>
-                        <td>phones</td>
-                        <td><button>update</button></td>
-                        <td><button>delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>iphone 9</td>
-                        <td>700</td>
-                        <td>100</td>
-                        <td>50</td>
-                        <td>10</td>
-                        <td>760</td>
-                        <td>10</td>
-                        <td>phones</td>
-                        <td><button>update</button></td>
-                        <td><button>delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>iphone 8</td>
-                        <td>600</td>
-                        <td>100</td>
-                        <td>50</td>
-                        <td>10</td>
-                        <td>660</td>
-                        <td>10</td>
-                        <td>phones</td>
-                        <td><button>update</button></td>
-                        <td><button>delete</button></td>
-                    </tr> -->
-                </tbody>
-            </table>
+            <div class="col-md-4">
+                <div class="item">
+                    <img class="w-100" src="images/portfolio-1.jpg">
+                    <div class="itemcaption">
+                        <h4>item title</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, aspernatur.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item">
+                    <img class="w-100" src="images/portfolio-2.jpg">
+                    <div class="itemcaption">
+                        <h4>item title</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, aspernatur.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item">
+                    <img class="w-100" src="images/portfolio-3.jpg">
+                    <div class="itemcaption">
+                        <h4>item title</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, aspernatur.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item">
+                    <img class="w-100" src="images/portfolio-1.jpg">
+                    <div class="itemcaption">
+                        <h4>item title</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, aspernatur.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="item">
+                    <img class="w-100" src="images/portfolio-2.jpg">
+                    <div class="itemcaption">
+                        <h4>item title</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, aspernatur.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="item">
+                    <img class="w-100" src="images/portfolio-3.jpg">
+                    <div class="itemcaption">
+                        <h4>item title</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, aspernatur.</p>
+                    </div>
+                </div>
+            </div>
+            <div  id="lightbox-container" class=" justify-content-center align-items-center">
+           
+                <div id="lightbox-item" class="d-flex align-items-center justify-content-between">
+        
+                    <i id="close" class="far fa-times-circle"></i>
+                    <i id="prev" class="far m-2 fa-arrow-alt-circle-left"></i>
+                    <i   id="next" class="far m-2 fa-arrow-alt-circle-right"></i>
+                </div>
+            </div> 
+            
         </div>
-
-
-
     </div>
 
-    <script src="./index.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- 
+    <div class="container py-3">
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="item">
+                    <img class="w-100" src="images/portfolio-1.jpg">
+                    <div class="item-caption">
+                        <h3>item title</h3>
+                        <p>lputate at, tempus viverra turpis. Fusce condimentum nunc acs
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="item">
+                    <img class="w-100" src="images/portfolio-3.jpg">
+                    <div class="item-caption">
+                        <h3>item title</h3>
+                        <p>lputate at, tempus viverra turpis. Fusce condimentum nunc acs
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="item">
+                    <img class="w-100" src="images/portfolio-2.jpg">
+                    <div class="item-caption">
+                        <h3>item title</h3>
+                        <p>lputate at, tempus viverra turpis. Fusce condimentum nunc acs
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="item">
+                    <img class="w-100" src="images/portfolio-2.jpg">
+                    <div class="item-caption">
+                        <h3>item title</h3>
+                        <p>lputate at, tempus viverra turpis. Fusce condimentum nunc acs
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="item">
+                    <img class="w-100" src="images/portfolio-1.jpg">
+                    <div class="item-caption">
+                        <h3>item title</h3>
+                        <p>lputate at, tempus viverra turpis. Fusce condimentum nunc acs
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="item">
+                    <img class="w-100" src="images/portfolio-3.jpg">
+                    <div class="item-caption">
+                        <h3>item title</h3>
+                        <p>lputate at, tempus viverra turpis. Fusce condimentum nunc acs
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="item">
+                    <img class="w-100" src="images/portfolio-3.jpg">
+                    <div class="item-caption">
+                        <h3>item title</h3>
+                        <p>lputate at, tempus viverra turpis. Fusce condimentum nunc acs
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="item">
+                    <img class="w-100" src="images/portfolio-1.jpg">
+                    <div class="item-caption">
+                        <h3>item title</h3>
+                        <p>lputate at, tempus viverra turpis. Fusce condimentum nunc acs
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="item">
+                    <img class="w-100 test" src="images/portfolio-2.jpg">
+                    <div class="item-caption">
+                        <h3>item title</h3>
+                        <p>lputate at, tempus viverra turpis. Fusce condimentum nunc acs
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+    <div  id="lightbox-container" class=" justify-content-center align-items-center">
+           
+        <div id="lightbox-item" class="d-flex align-items-center justify-content-between">
+
+            <i id="close" class="far fa-times-circle"></i>
+            <i id="prev" class="far m-2 fa-arrow-alt-circle-left"></i>
+            <i   id="next" class="far m-2 fa-arrow-alt-circle-right"></i>
+        </div>
+    </div> -->
+
+
+            <script src="first.js"></script>
 </body>
 
 </html>
